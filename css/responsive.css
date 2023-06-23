@@ -1,18 +1,20 @@
-/*
-.mobile {
-  display: none;
-}
-  
-.desktop {
-  display: block;
-}
-  
-@media only screen and (max-width: 1023px) {
-  .mobile {
-    display: block;
+@media only screen and (min-width: 768px) {
+  iframe {
+    max-width: 480px;
   }
-  
-  .desktop {
-    display: none;
+
+  #mango-photos .grid-container {
+    display: flex;
+    gap: 16px;
+  }
+
+  #mango-photos .grid-container > div {
+    width: 25%;
+  }
+
+  #mango-photos .grid-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
 }
