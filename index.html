@@ -5,9 +5,161 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mango Fruit Store</title>
-    <link rel="stylesheet" href="responsive.css"/>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css"/>
+    <link
+      rel="icon"
+      href="https://raw.githubusercontent.com/mfaisalkemal/revou-barcelona/main/image/mango-icon.png"
+      type="image/x-icon"
+    />
 </head>
 <body>
-    
+    <div class="welcome">
+        <h1>Welcome</h1>
+    </div>
+    <nav>
+        <span class="relative-container">
+            <img class="icon"
+             src="https://raw.githubusercontent.com/mfaisalkemal/revou-barcelona/main/image/mango-icon.png" alt="Mango Icon"
+            />
+        </span>
+        <ul class="desktop">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+	
+    <header class="full-screen" id="header">
+        <h1>Mango Fruit Store</h1>
+        <p>Welcome to Indonesia mango fruit store</p>
+    </header>
 </body>
+	<main>
+		<section id="mango-photos">
+			<h2>Mango Varieties</h2>
+			<div class="grid-container">
+				<div id="item-1">
+					<img
+					  src="https://raw.githubusercontent.com/mfaisalkemal/revou-barcelona/main/image/mangga-arumanis.webp"
+					  alt="Mangga Arumanis"
+					/>
+				</div>
+			<div id="item-2">
+				<img
+				  src="https://raw.githubusercontent.com/mfaisalkemal/revou-barcelona/main/image/mangga-gedong.webp"
+				  alt="Mangga Gedong"
+				/>
+			</div>
+				<div id="item-3">
+					<img
+					  src="https://raw.githubusercontent.com/mfaisalkemal/revou-barcelona/main/image/mangga-manalagi.webp"
+					  alt="Mangga Manalagi"
+					/>
+				</div>
+			<div id="item-4">
+				<img
+					src="https://raw.githubusercontent.com/mfaisalkemal/revou-barcelona/main/image/mangga-alpuket.webp"
+					alt="Mangga Alpuket"
+				/>
+			</div>
+        </div>
+		</section>
+		
+		<section id="section-video">
+			<h2>How to Cut a Mango: 3 Ways!</h2>
+			<div class="flex-container">
+				<iframe
+					width="420" height="345" src="https://www.youtube.com/embed/gsfEKiP1lzM">
+				</iframe>
+        </div>
+		</section>
+	
+        <section id="form-section">
+        <h2 class="main1">Get in touch</h2>
+        <form action="#">
+          <fieldset>
+            <legend>Personal Data:</legend>
+            <div>
+              <label for="fullName">Full Name:</label>
+              <input id="fullName" type="text" required />
+            </div>
+
+            <div>
+              <label for="email">Email:</label>
+              <input id="email" type="email" required />
+            </div>
+			<div>
+				<label  for="region">Your Region</label>
+					<select id="form-signup-region" name="region">
+						<option class="form-signup-option" value="asia">Asia</option>
+						<option class="form-signup-option" value="africa">Africa</option>
+						<option class="form-signup-option" value="central america">Central America</option>
+						<option class="form-signup-option" value="north america">North America</option>
+                        <option class="form-signup-option" value="south america">South America</option>
+                        <option class="form-signup-option" value="europe">Europe</option>
+                        <option class="form-signup-option" value="oceania">Oceania</option>
+                        <option class="form-signup-option" value="the caribbean">The Caribbean</option>
+					</select>
+				</div>
+            <div>
+              <p>Are you Indonesia citizen?</p>
+              <input type="radio" id="yes" name="isIndonesia" value="Male" />
+              <label for="yes">Yes</label>
+              <input type="radio" id="no" name="isIndonesia" value="Female" />
+              <label for="no">No</label>
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend>Additional information:</legend>
+            <div>
+              <p>What is your favorite mango?</p>
+              <input
+                id="Arumanis"
+                type="checkbox"
+                name="varieties"
+                value="Arumanis"
+              />
+              <label for="arumanis">Arumanis</label>
+              <input
+                id="Gedong"
+                type="checkbox"
+                name="varieties"
+                value="Gedong"
+              />
+              <label for="gedong">Gedong</label>
+              <input
+                id="Manalagi"
+                type="checkbox"
+                name="varieties"
+                value="Manalagi"
+              />
+              <label for="manalagi">Manalagi</label>
+			  <input
+                id="Alpukat"
+                type="checkbox"
+                name="varieties"
+                value="Alpukat"
+              />
+              <label for="alpukat">Alpuket</label>
+            </div>
+            <div>
+              <p>Tell us what mango varieties you interest to buy!</p>
+              <textarea rows="3"></textarea>
+            </div>
+            <div>
+              <p>Upload your profile picture here:</p>
+              <input
+                type="file"
+                id="photo"
+                name="myProfilePicture"
+                required
+                accept="image/png, image/jpeg, image/webp"
+              />
+            </div>
+          </fieldset>
+          <button type="submit">Submit</button>
+        </form>
+      </section>
+    </main>
 </html>

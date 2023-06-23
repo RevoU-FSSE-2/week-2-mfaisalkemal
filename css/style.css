@@ -1,0 +1,146 @@
+body {
+    background-color: #f4f4f4;
+    font-family: "Open Sans", sans-serif;
+    margin: 0;
+}
+
+.icon {
+    margin: auto;
+    animation: mymove1 1.5s infinite;
+    rotate: 7.5deg
+}
+
+@keyframes mymove1 {
+    50% {transform: rotate(-15deg);}
+}
+
+.welcome{
+	text-align: center;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+nav {  
+    position: sticky;
+    top: 0px;
+    background-color: #f4ffb4;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    height: 52px;
+    border-bottom: 2px solid #222222;
+}
+
+nav > ul {
+  margin-left: auto;
+  margin-right: 16px;
+}
+
+nav > ul > li {
+  display: inline-block;
+}
+
+nav > span > img {
+  height: 48px;
+  width: auto;
+  padding: 8px;
+}
+
+nav > span {
+  display: flex;
+  align-items: center;
+}
+
+header {
+    text-align: center;
+    color: white;
+    background-color: #222222;
+    height: 320px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 48px;
+}
+
+h2 {
+  text-align: center;
+}
+
+#mango-photos .grid-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#section-video .flex-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main1{
+	text-align: center;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+fieldset {
+  margin: 16px 0;
+  border-radius: 4px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 4px 4px;
+  margin: 8px 0;
+  display: block;
+}
+
+#form-section {
+  padding: 8px;
+  margin-top: 16px;
+}
+
+#form-section form {
+  max-width: 480px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+button[type="submit"] {
+  color: black;
+  border: 1px solid black;
+  border-radius: 4px;
+  width: 100%;
+  padding: 8px 16px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 768px) {
+
+  iframe {
+    max-width: 480px;
+  }
+
+  #mango-photos .grid-container {
+    display: flex;
+    gap: 16px;
+  }
+
+  #mango-photos .grid-container > div {
+    width: 25%;
+  }
+
+  #mango-photos .grid-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
